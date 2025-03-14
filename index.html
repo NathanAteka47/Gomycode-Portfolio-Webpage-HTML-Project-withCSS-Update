@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nathan Ateka</title>
+    <!-- Linking with css file -->
+    <link rel="stylesheet" href="styles.css" />
     <style>
       body {
         background-color: lightseagreen;
@@ -27,27 +29,31 @@
     <!-- Header -->
     <header>
       <h1><b>Nathan Ateka</b></h1>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
-
     <img
-      width="320"
-      height="240"
+      width="400"
+      height="300"
       src="portfolio-web-page-pic.jpg"
       alt="My Picture"
     />
 
     <!-- Main Content -->
     <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
+      <section id="about" class="section about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">
           I am a hardworking individual who is 23 years old, aspiring to go deep
           into the tech world. I enjoy learning new concepts with the urge of
           problem-solving. I use the chances at hand well to scoop success out
@@ -56,9 +62,9 @@
       </section>
       <hr />
 
-      <section id="work">
-        <h2>Work</h2>
-        <p>
+      <section id="work" class="section work">
+        <h2 class="section-title">Work</h2>
+        <p class="section-text">
           I have two years of experience in aircraft maintenance. I am currently
           unemployed. I was attached to Airworks Limited as a school attachment
           process, but I completed and am currently job hunting.
@@ -66,29 +72,31 @@
       </section>
       <hr />
 
-      <section id="resume">
-        <h2>Resume</h2>
+      <section id="resume" class="section resume">
+        <h2 class="section-title">Resume</h2>
         <dl>
-          <dt><b>Working Experience</b></dt>
+          <dt class="resume-heading"><b>Working Experience</b></dt>
           <dd>
-            <ul>
-              <li>2024: Airworks Limited Wilson Airport</li>
-              <li>2023: Skymax Aviation Limited Malindi Airport</li>
+            <ul class="resume-list">
+              <li class="resume-item">2024: Airworks Limited Wilson Airport</li>
+              <li class="resume-item">
+                2023: Skymax Aviation Limited Malindi Airport
+              </li>
             </ul>
           </dd>
 
-          <dt><b>Studies</b></dt>
+          <dt class="resume-heading"><b>Studies</b></dt>
           <dd>
-            <ul>
-              <li>
+            <ul class="resume-list">
+              <li class="resume-item">
                 2021-2024: Diploma in Aeronautical Engineering (Airframes &
                 Engines) at East African School of Aviation
               </li>
-              <li>
+              <li class="resume-item">
                 2016-2021: Kenya Certificate of Secondary Education at Kisumu
                 Day and Boarding Secondary School
               </li>
-              <li>
+              <li class="resume-item">
                 2008-2016: Kenya Certificate of Primary Education at Shikusa GK
                 Primary School
               </li>
@@ -98,25 +106,41 @@
       </section>
       <hr />
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <form>
+      <section id="contact" class="section contact">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form">
           <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required />
+            <label for="name" class="form-label">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              required
+            />
+          </div>
+          <div>
+            <label for="comment" class="form-label">Comment</label>
+            <textarea
+              id="comment"
+              name="comment"
+              class="form-textarea"
+              rows="4"
+              required
+            ></textarea>
           </div>
 
-          <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" />
-          </div>
-
-          <div>
-            <label for="comment">Comment:</label>
-            <textarea name="comment" id="comment"></textarea>
-          </div>
-
-          <button type="submit">Submit</button>
+          <button type="submit" class="form-button">Submit</button>
         </form>
       </section>
       <hr />
@@ -132,8 +156,8 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>
+    <footer class="footer">
+      <p class="footer-text">
         <b><i>Rights fully reserved. Thank you for visiting. 2025.</i></b>
       </p>
     </footer>
