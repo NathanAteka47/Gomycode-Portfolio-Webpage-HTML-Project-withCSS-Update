@@ -187,10 +187,15 @@ h1 {
 /* h2 text style */
 h2 {
   font-weight: 50;
+  text-shadow: 5px 5px 10px #000000;
 }
 
 /* Audio section styles */
 .audio {
   width: 100%;
   max-width: 1300px;
+}
+
+p {
+  text-shadow: 5px 5px 10px #fdfdfd;
 }
